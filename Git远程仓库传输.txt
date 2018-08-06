@@ -1,0 +1,22 @@
+cd d:\github
+
+//初始化
+git init 
+
+//user.name是你自己的github的名字
+git config user.name "penglongli"  
+
+//user.email是你注冊的时候的邮箱
+git config user.email "1589987691@qq.com" 
+
+//添加文件
+git add helloworld.txt
+
+//git commit -m 參数后面跟字符串，告诉Git本次改动的说明信息（相当于注释的东西）。总是应该在每次提交的时候注明说明信息。
+git commit -m "first commit" 
+
+//这里输入远程地址
+git remote add origin https://github.com/penglongli/FirstRepository.git
+
+//推送给远程仓库
+git push origin master
