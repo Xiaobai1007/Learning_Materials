@@ -4,10 +4,8 @@ cd d:\github
 git init 
 
 //user.name是你自己的github的名字
-git config user.name "penglongli"  
-
-//user.email是你注冊的时候的邮箱
-git config user.email "1589987691@qq.com" 
+git config user.name "Xiaobai1007"  
+git config user.email "849494330@qq.com" 
 
 //添加文件
 git add helloworld.txt
@@ -16,7 +14,10 @@ git add helloworld.txt
 git commit -m "first commit" 
 
 //这里输入远程地址
-git remote add origin https://github.com/penglongli/FirstRepository.git
+git remote add origin https://github.com/Xiaobai1007/HelloWord.git
 
 //推送给远程仓库
 git push origin master
+
+//设置无密码推送
+ssh-keygen -t rsa -b 4096 -C "849494330@qq.com"
