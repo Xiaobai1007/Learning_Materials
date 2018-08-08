@@ -1,0 +1,20 @@
+
+//主要用于Java线程里指定时间或周期运行任务。Timer是线程安全的，但不提供实时性(real-time)保证。
+
+//第一种方法：指定任务task在指定时间time执行
+//schedule(TimerTask task, Date time)
+
+// 第二种方法：指定任务task在指定延迟delay后执行
+//schedule(TimerTask task, long delay)
+
+// 第三种方法：指定任务task在指定时间firstTime执行后，进行重复固定延迟频率peroid的执行   
+// schedule(TimerTask task, Date firstTime,long period)   
+
+// 第四种方法：指定任务task 在指定延迟delay 后，进行重复固定延迟频率peroid的执行    
+// schedule(TimerTask task, long delay, long period)  
+
+// 第五种方法：指定任务task在指定时间firstTime执行后，进行重复固定延迟频率peroid的执行    
+// scheduleAtFixedRate(TimerTask task,Date firstTime,long period)  
+
+// 第六种方法：指定任务task 在指定延迟delay 后，进行重复固定延迟频率peroid的执行   
+// scheduleAtFixedRate(TimerTask task, long delay, long period) 
