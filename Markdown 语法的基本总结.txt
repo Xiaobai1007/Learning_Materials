@@ -1,3 +1,9 @@
+Markdown是一种轻量级标记语言。
+Markdown 的语法是一些简单而且常用的标记符号，任何人只要花几分钟就能学会；
+Markdown 是兼容性非常强的纯文本内容，可以使用任何编辑器打开，格式都不会乱；
+Markdown 可以导出 PDF、Word、HTML、Epub、LaTeX 等文件格式；
+
+
 标题等级：#
 加粗：**xx**
 斜体：*xx*
