@@ -1,0 +1,6 @@
+XMLHttpRequest是客户端（如浏览器）的一个API接口，提供一个客户端和服务器之间传输数据的功能。它使从一个URL获取数据变得容易而不用刷新整个页面。在更新页面一部分数据的同时不会打断用户的其它操作。XMLHttpRequest经常应用于AJAX编程。
+
+var myRequest = new XMLHttpRequest();
+该构造函数初始化一个XMLHttpRequest。它必须在调用任何其它方法之前调用。
+
+详情查看：https://blog.csdn.net/y2010081134/article/details/71436200

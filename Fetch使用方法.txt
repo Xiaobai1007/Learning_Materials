@@ -1,0 +1,36 @@
+fetch("url",{
+            method:'get'
+        }).then(function (response){
+            response.text().then(function(value){
+                console.log(value)
+            })
+        })
+
+首先是构造请求的URL，然后将URL传递给全局的fetch()方法，它会立刻返回一个Promise， 当Promise被通过，它会返回一个Response对象，通过该对象的json()方法可以将结果作为JSON对象返回。 response.json()同样会返回一个Promise对象，因此在我们的例子中可以继续链接一个then()方法。
+
+1、fetch() 返回的是一个Promise对象。
+
+　　fetch使用的promise对象可以使得我们使用同步的方式写异步函数。
+
+ 
+
+2、 fetch api是可以结合 async 和 await 来使用的。 
+
+　　fetch是基于promise实现的，但是使用promise的写法，我们还是可以看到callback的影子，如果结合 async和await来使用，还是非常不错的。
+
+ 
+
+3、 Fetch api 提供的spi囊括但是不限于xhr的所有功能。
+
+ 
+
+4、 fetch api 可以跨域。 
+
+　　参考： https://fetch.spec.whatwg.org/#http-cors-protocol
+
+　　跨域请求必须包括  Origin 作为header. 
+
+
+5、fetch提供了对request和response对象的通用定义。
+
+　 Fetch 提供了对 Request 和 Response （以及其他与网络请求有关的）对象的通用定义。所以在一个Fetch请求中，完全可以只使用Request 和 Response两个对象，通过Request 设置参数，通过Response 对返回值进行处理。　
