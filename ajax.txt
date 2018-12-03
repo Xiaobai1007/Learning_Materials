@@ -1,0 +1,19 @@
+
+    $.ajax({
+        url:"/xxx", //请求的地服务器址
+        method:'get|post|put|delete|patch|options', //请求的方法
+        async:'true|false', //是否使用异步请求的方式
+        headers:{}, //设置请求头部
+        contentType:'application/x-www-form-urlencoded|...', //请求的 enctype
+        data:'String|Object|Array', //传输的数据
+        processDate:'false|true',
+        tranditional:'false|true',
+        dataType:'xml|json|html|text' //默认根据response头部的信息自动推测
+    }).done((data) => {	//data的类型，由dataType 决定
+		console.log(json.xxx)
+	}).fail((xhr,status,err) => { // 参数分别是 ajax 原生对象，错误状态，以及错误对象
+		console.log(err);
+	}).always(() => {
+		console.log("终于结束了")
+	})
+	
